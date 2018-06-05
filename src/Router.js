@@ -1,12 +1,16 @@
 import { createStackNavigator } from 'react-navigation';
-import ImageSelect from './components/ImageSelect';
+import HomePage from './components/HomePage';
+import Ads from './components/Ads';
+import Result from './components/Result';
 
 const Router = createStackNavigator(
     {
-        ImageSelect: { screen: ImageSelect }
+        HomePage: { screen: HomePage },
+        Ads: { screen: Ads },
+        Result: { screen: Result }
     },
     {
-        initialRouteName: 'ImageSelect'
+        initialRouteName: 'HomePage'
     }
 );
 

@@ -1,15 +1,15 @@
 import React from 'react';
-import { Text, TouchableOpactiy } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 
-const Button = ({ children }) => {
+const Button = ({ onPress, children }) => {
     const { textSytle, buttonStyle } = styles;
 
     return (
-        <TouchableOpactiy style={buttonStyle}>
+        <TouchableOpacity onPress={onPress} style={buttonStyle}>
             <Text style={textSytle}>
                 {children}
             </Text>
-        </TouchableOpactiy>
+        </TouchableOpacity>
     );
 };
 
@@ -23,7 +23,7 @@ const styles = {
     },
     buttonStyle: {
         flex: 1,
-        alignSelf: 'stretch',
+        alignSelf: 'flex-end',
     }
 };
 
