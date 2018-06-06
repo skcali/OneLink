@@ -11,7 +11,7 @@ const Ads = () => {
     return (
         <View style={spinnerStyle}>
             <ActivityIndicator size='large' />
-            <Text>Ad showing while we process the image.</Text>
+            <Text>Grabbing Text...</Text>
         </View> 
     );
 };

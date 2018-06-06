@@ -21,10 +21,10 @@ const styles = {
         paddingTop: 10,
         paddingBottom: 10
     },
-    buttonStyle: {
+    /*buttonStyle: {
         flex: 1,
-        alignSelf: 'flex-end',
-    }
+        alignSelf: 'flex-end'
+    }*/
 };
 
 export { Button };

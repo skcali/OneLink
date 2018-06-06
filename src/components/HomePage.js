@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import { AdMobBanner } from 'react-native-admob';
 import ImageSelect from './ImageSelect';
 
 class HomePage extends Component {
@@ -15,6 +16,10 @@ class HomePage extends Component {
             <View style={mainContainer}>
                 <Text style={logoContainer}>Take or select a picture!</Text>
                 <ImageSelect navigation={navigation} />
+                <AdMobBanner
+                adSize='banner'
+                adUnitID='ca-app-pub-3940256099942544/6300978111'
+            />
             </View>
         );
     }
@@ -24,12 +29,11 @@ const styles = {
     mainContainer: {
         flex: 1,
         flexDirection: 'column',
+        alignItems: 'center'
     },
-    logoContainer: {
+    /*logoContainer: {
         flex: 1,
-        justifyContent: 'center', 
-        alignItems: 'center' 
-    }
+    },*/
 };
 
 export default HomePage;

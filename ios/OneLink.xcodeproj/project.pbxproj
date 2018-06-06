@@ -39,6 +39,7 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		9B9ABBCD71474903947CA1ED /* libRNTesseractOcr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD78EDF4A27414CAEB6BE04 /* libRNTesseractOcr.a */; };
 		14BB6BD91529433E9CB0054F /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A35ADBCE6934DD3B80CD07D /* libRNImagePicker.a */; };
+		CAF1B6F7B1DB407AA181F9BD /* libRNAdMobManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5919E3C8561E414ABD01115F /* libRNAdMobManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -348,6 +349,8 @@
 		9CD78EDF4A27414CAEB6BE04 /* libRNTesseractOcr.a */ = {isa = PBXFileReference; name = "libRNTesseractOcr.a"; path = "libRNTesseractOcr.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		153345602D3D4C3EBC424342 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; name = "RNImagePicker.xcodeproj"; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		1A35ADBCE6934DD3B80CD07D /* libRNImagePicker.a */ = {isa = PBXFileReference; name = "libRNImagePicker.a"; path = "libRNImagePicker.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		7E6520C1DD914BF5930BE75B /* RNAdMobManager.xcodeproj */ = {isa = PBXFileReference; name = "RNAdMobManager.xcodeproj"; path = "../node_modules/react-native-admob/ios/RNAdMobManager.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		5919E3C8561E414ABD01115F /* libRNAdMobManager.a */ = {isa = PBXFileReference; name = "libRNAdMobManager.a"; path = "libRNAdMobManager.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +381,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				9B9ABBCD71474903947CA1ED /* libRNTesseractOcr.a in Frameworks */,
 				14BB6BD91529433E9CB0054F /* libRNImagePicker.a in Frameworks */,
+				CAF1B6F7B1DB407AA181F9BD /* libRNAdMobManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +570,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				2C812E66A85F44939F1AB04F /* RNTesseractOcr.xcodeproj */,
 				153345602D3D4C3EBC424342 /* RNImagePicker.xcodeproj */,
+				7E6520C1DD914BF5930BE75B /* RNAdMobManager.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1194,11 +1199,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Debug;
@@ -1221,11 +1228,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Release;
@@ -1249,6 +1258,7 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Debug;
@@ -1271,6 +1281,7 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Release;
@@ -1302,11 +1313,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Debug;
@@ -1338,11 +1351,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Release;
@@ -1373,11 +1388,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Debug;
@@ -1408,11 +1425,13 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
 				);
 			};
 			name = Release;

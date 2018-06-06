@@ -15,19 +15,17 @@ const options = {
 };
 
 class ImageSelect extends Component {
-
     takePicture() {
         const { navigation } = this.props;
-        
-        navigation.navigate('Ads');
-        
+
+        navigation.navigate('Loading');
+
         ImagePicker.launchCamera(options, (response) => {
             const { didCancel, error, path } = response;
 
             if (didCancel || error) {
                 //this.props.cancelOCR();
             } else {
-                navigation.navigate('Ads');
                 this.props.doOCR({ path, navigation });
                 //const source = (Platform.OS === 'android') ? { uri: response.uri, isStatic: true } : { uri: response.uri.replace('file://', ''), isStatic: true };
             }
@@ -71,12 +69,12 @@ const styles = {
         flex: 1,
         flexDirection: 'row',
         height: 50,
-    },
+    }
 };
 
 const mapStateToProps = (state) => {
     const { isLoading, result } = state;
-    
+
     return { isLoading, result };
 };
 
